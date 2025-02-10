@@ -4,7 +4,7 @@ function App() {
   const [message, setMessage] = useState("Chargement...");
 
   useEffect(() => {
-    fetch("http://localhost:8000")
+    fetch("http://16.170.201.69:8000")
       .then((res) => res.json())
       .then((data) => setMessage(data.message))
       .catch((err) => setMessage("Erreur : " + err.message));
